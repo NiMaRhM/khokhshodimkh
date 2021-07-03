@@ -1,0 +1,214 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+body {
+    background-image: url(/img/background.jpg); 
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+section {
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.frame {
+   width: 1450px;
+   height: 690px;
+   padding: 25px;
+   margin: 0 10px 0 10px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+.full-box {
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 5s;
+}
+
+.full-box:hover {
+    height: 100%;
+    width: 20%;
+    float: left;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.05);
+    background-image: linear-gradient(#00000010, #00000035 )
+}
+
+.half-box {
+    height: 49%;
+    width: 18%;
+    float: left;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-box {
+    height: 49%;
+    width: 18%;
+    float: left;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.half-box:hover {
+    height: 49%;
+    width: 18%;
+    float: left;
+    margin: 5px 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.05);
+    background-image: linear-gradient(#00000010, #00000035 );
+}
+
+span {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.icon-full {
+    font-size: 155px;
+}
+
+.icon-half {
+    font-size: 148px;
+}
+
+.header-full {
+    position: absolute;
+    margin-top: 250px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-left: 10px;
+}
+
+.header-half {
+    position: absolute;
+    margin-top: 229px;
+    font-size: 23px;
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+
+.game {
+    background-image: linear-gradient(#a8e063, #56ab2f);
+}
+
+.activity {
+    background-image: linear-gradient(#eb3349, #f45c43);
+}
+
+.setting {
+    background-image: linear-gradient(#19c9bb, #30a0e3);
+}
+
+.calcutor {
+    background-image: linear-gradient(#a697fc, #5a43f0);
+}
+
+.pictures {
+    background-image: linear-gradient(#f868af,#fe996a);
+}
+
+.tv {
+    background-image: linear-gradient(#f9ff6e, #3ac191);
+}
+
+.messages {
+    background-image: linear-gradient(#19caba, #30a0e4);
+}
+
+.add-friends {
+    background-image: linear-gradient(#a697fc, #5943f0);
+}
+
+@media only screen and (max-width: 1210px) {
+    .icon-half {
+        font-size: 120px;
+    }
+    .header-half {
+        font-size: 15px;
+    }
+    .header-full {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    
+    .full-box {
+        width: 49%;
+        flex-wrap: wrap;
+        height: 200px;
+        margin: 0 0 25px 0;
+        pointer-events: none;
+    }
+    .header-full {
+        margin-top: 122px;
+        font-size: 17px;
+    }
+    .icon-full {
+        font-size: 95px;
+    }
+    
+    .half-box {
+        width: 32%;
+        pointer-events: none;
+        flex-wrap: wrap;
+
+        height: 180px;
+        margin: 0 0 25px 0;
+    }
+
+    .header-half {
+        margin-top: 122px;
+        font-size: 13px;
+    }
+    .icon-half {
+        font-size: 87px;
+    }
+
+    .frame {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+    }
+    body {
+        background-repeat: no-repeat;
+    }
+}
+
